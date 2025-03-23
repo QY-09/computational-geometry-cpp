@@ -1,2 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/ar qc libgeom_algorithms.a CMakeFiles/geom_algorithms.dir/src/algorithms/convex_hull.cpp.o
-/Library/Developer/CommandLineTools/usr/bin/ranlib libgeom_algorithms.a
