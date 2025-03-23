@@ -1,32 +1,19 @@
-# Prerequisites
-*.d
+# CMake build folders and files
+build/
+CMakeFiles/
+Makefile
+CMakeCache.txt
+cmake_install.cmake
 
-# Compiled Object files
-*.slo
-*.lo
+# Object files and binaries
 *.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
+*.out
+*.exe
+*.a
 *.so
 *.dylib
-*.dll
+convex_hull
+convex_hull_demo
 
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+# OS-specific files
+.DS_Store
