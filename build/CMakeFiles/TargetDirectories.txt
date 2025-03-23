@@ -1,0 +1,4 @@
+/Users/qianye/CppProjects/computational-geometry-cpp/build/CMakeFiles/geom_algorithms.dir
+/Users/qianye/CppProjects/computational-geometry-cpp/build/CMakeFiles/convex_hull_demo.dir
+/Users/qianye/CppProjects/computational-geometry-cpp/build/CMakeFiles/edit_cache.dir
+/Users/qianye/CppProjects/computational-geometry-cpp/build/CMakeFiles/rebuild_cache.dir

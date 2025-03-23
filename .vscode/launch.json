@@ -1,0 +1,48 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "Build with CGAL",
+            "command": "/usr/bin/clang++",
+            "args": [
+                "-std=c++17",
+                "-fcolor-diagnostics",
+                "-fansi-escape-codes",
+                "-g",
+                "${workspaceFolder}/src/algorithms/convex_hull.cpp",
+                "${workspaceFolder}/examples/convex_hull_demo.cpp",
+                "-o",
+                "${workspaceFolder}/build/convex_hull_demo",
+                "-I/opt/homebrew/include",
+                "-L/opt/homebrew/lib",
+                "-lCGAL",
+                "-lgmp",
+                "-lmpfr"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        }
+    ],
+    "configurations": [
+        
+        {
+            "name": "C/C++: g++ build and debug active file",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb",
+            "preLaunchTask": "C/C++: g++ build active file"
+        }
+    ]
+}
