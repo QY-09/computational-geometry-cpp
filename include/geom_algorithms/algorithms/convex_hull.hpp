@@ -1,5 +1,5 @@
-#ifndef COMVEX_HULL_HPP
-#define COMVEX_HULL_HPP
+#ifndef CONVEX_HULL_HPP
+#define CONVEX_HULL_HPP
 
 #include <vector>
 
@@ -13,6 +13,5 @@ struct  Point
 // Returns a vector of points representing the convex hull.
 
 std::vector<Point> compute_convex_hull(std::vector<Point> points);
-
 
 #endif

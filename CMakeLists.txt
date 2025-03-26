@@ -16,6 +16,7 @@ find_package(CGAL REQUIRED)
 # Create the geometry algorithm library
 add_library(geom_algorithms
     src/algorithms/convex_hull.cpp
+    src/algorithms/sweep_line.cpp
 )
 
 target_include_directories(geom_algorithms
@@ -46,6 +47,23 @@ set_target_properties(convex_hull_demo
 
 # Link demo to library
 target_link_libraries(convex_hull_demo
+    PRIVATE
+    geom_algorithms
+)
+
+
+add_executable(sweep_line_demo
+    examples/sweep_line_demo.cpp
+)
+
+set_target_properties(sweep_line_demo
+    PROPERTIES
+    CXX_STANDARD 17
+    CXX_STANDARD_REQUIRED ON
+    OUTPUT_NAME "sweep_line"
+)
+
+target_link_libraries(sweep_line_demo
     PRIVATE
     geom_algorithms
 )
