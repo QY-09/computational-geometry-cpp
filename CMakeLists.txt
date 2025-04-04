@@ -17,7 +17,9 @@ find_package(CGAL REQUIRED)
 add_library(geom_algorithms
     src/algorithms/convex_hull.cpp
     src/algorithms/sweep_line.cpp
-)
+    src/algorithms/monotone_partition.cpp
+    src/algorithms/triangulate_monotone.cpp  
+    )
 
 target_include_directories(geom_algorithms
     PUBLIC
