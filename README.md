@@ -9,15 +9,24 @@ computational-geometry-cpp/
 │   ├── core/              # Base classes/interfaces
 │   │   └── geometry.hpp
 │   └── algorithms/        # Algorithm APIs
-│       └── convex_hull.hpp
+│   │   ├── convex_hull.hpp
+│   │   ├── sweep_line.hpp
+│   │   ├── monotone_partition.hpp
+│   │   └── triangulate_monotone.hpp
+|   │
 │   └── visulization/        # Visulization APIs
 │    
 ├── src/
 │   ├── core/              # Implementation details
 │   │   └── geometry.cpp
 │   └── algorithms/
-│   |    └── convex_hull.cpp
+│   │   ├── convex_hull.cpp
+│   │   ├── sweep_line.cpp
+│   │   ├── monotone_partition.cpp
+│   │   └── triangulate_monotone.cpp
 |   └── visulization/  
 └── examples/
-    └── convex_hull_demo.cpp  # Demo driver
+|   ├── convex_hull_demo.cpp
+│   ├── sweep_line_demo.cpp
+│   └── polygon_triangulation_demo.cpp
 ```
