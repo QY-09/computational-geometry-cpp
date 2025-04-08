@@ -10,11 +10,14 @@ computational-geometry-cpp/
 │   │   └── geometry.hpp
 │   └── algorithms/        # Algorithm APIs
 │       └── convex_hull.hpp
+│   └── visulization/        # Visulization APIs
+│    
 ├── src/
 │   ├── core/              # Implementation details
 │   │   └── geometry.cpp
 │   └── algorithms/
-│       └── convex_hull.cpp
+│   |    └── convex_hull.cpp
+|   └── visulization/  
 └── examples/
     └── convex_hull_demo.cpp  # Demo driver
 ```
