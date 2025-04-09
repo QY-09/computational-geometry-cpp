@@ -18,7 +18,8 @@ add_library(geom_algorithms
     src/algorithms/convex_hull.cpp
     src/algorithms/sweep_line.cpp
     src/algorithms/monotone_partition.cpp
-    src/algorithms/triangulate_monotone.cpp  
+    src/algorithms/triangulate_monotone.cpp 
+    src/visulization/svg_writer.cpp 
     )
 
 target_include_directories(geom_algorithms
@@ -39,7 +40,6 @@ add_executable(convex_hull_demo
     examples/convex_hull_demo.cpp
 )
 
-# C++ standard and output name (this is where your error occurred!)
 set_target_properties(convex_hull_demo
     PROPERTIES
     CXX_STANDARD 17
@@ -66,6 +66,20 @@ set_target_properties(sweep_line_demo
 )
 
 target_link_libraries(sweep_line_demo
+    PRIVATE
+    geom_algorithms
+)
+
+add_executable(polygon_triangulation_demo
+    examples/polygon_triangulation_demo.cpp
+)
+set_target_properties(polygon_triangulation_demo
+    PROPERTIES
+    CXX_STANDARD 17
+    CXX_STANDARD_REQUIRED ON
+    OUTPUT_NAME "polygon_triangulation"
+)
+target_link_libraries(polygon_triangulation_demo
     PRIVATE
     geom_algorithms
 )

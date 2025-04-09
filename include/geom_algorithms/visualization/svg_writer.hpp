@@ -1,11 +1,12 @@
 #pragma once
 #include <string>
 #include <vector>
-#include "../geom_algorithms/algorithms/polygon.hpp"
+#include "../include/geom_algorithms/algorithms/polygon.hpp"
+#include "../include/geom_algorithms/algorithms/monotone_partition.hpp"
 
-namespace geo::viz{
+namespace geom::viz{
 
     void writePolygonSVG(const std::string& filename, const Polygon& poly);
-    void writeTriangulationSVG(const std::string& filename, const Polygon& poly, const std::vector<Edge>& diagonals);
+    void writeTriangulationSVG(const std::string& filename, const Polygon& poly, const std::vector<Diagonal>& diagonals);
 }
 

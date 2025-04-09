@@ -7,8 +7,11 @@ namespace geom{
 //  type of the vertex
 
 enum class VertexType {
-    START,
-    END,SPLIT,MERGE,REGULAR
+    START,  
+    END,
+    SPLIT,
+    MERGE,
+    REGULAR
 };
 // diagonal to insert
 struct Diagonal{
